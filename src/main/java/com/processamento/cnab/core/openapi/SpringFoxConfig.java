@@ -108,7 +108,11 @@ public class SpringFoxConfig implements WebMvcConfigurer {
 					new ResponseMessageBuilder()
 						.code(HttpStatus.INTERNAL_SERVER_ERROR.value())
 						.message("Erro interno no servidor")
-						.build()
+						.build(),
+						new ResponseMessageBuilder()
+							.code(HttpStatus.UNAUTHORIZED.value())
+							.message("Não Autorizado")
+							.build()
 				);
 	}
 
