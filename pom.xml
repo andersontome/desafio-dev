@@ -18,7 +18,6 @@
 		<java.version>11</java.version>
 		<spring-security-oauth2>2.3.7.RELEASE</spring-security-oauth2>
 		<oauth2-oidc-sdk>6.21.2</oauth2-oidc-sdk>
-		<spring-fox.version>2.9.2</spring-fox.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -29,7 +28,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
@@ -72,16 +70,6 @@
 			<artifactId>oauth2-oidc-sdk</artifactId>
 			<version>${oauth2-oidc-sdk}</version>
 		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>${spring-fox.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>${spring-fox.version}</version>
-		</dependency>
 	</dependencies>
 
 	<build>
@@ -100,5 +88,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
